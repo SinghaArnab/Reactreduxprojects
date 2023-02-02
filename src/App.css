@@ -1,0 +1,265 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**********************Counter*****************************/
+
+@keyframes pan {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+
+  .counterBack{
+    background-image: url('../public/img/counterback.jpg');
+    animation: pan 6s infinite alternate linear;
+  }
+
+.CounterText{
+	font-size: 72px;
+	background: -webkit-linear-gradient(rgb(18, 255, 93), rgb(243, 92, 92));
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent;
+}
+/* ///////////////////////////E-commerce////////////////// */
+
+.subnavitems .active{
+  background-color:rgb(131, 225, 131);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.logoname{
+  font-size: xx-large;
+  font-weight:bold;
+}
+.logonameextra{
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.Eshoplogo3{
+  color: rgb(29, 116, 87);
+}
+
+.Eshoplogo4{
+  color: red;
+}
+
+.Eshopcart5{
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+}
+
+.shoppingbtn1,.shoppingbtn2{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.shoppingbtn1:hover{
+  background-color: rgb(254, 254, 132);
+  color: #030303;
+}
+.shoppingbtn2:hover{
+  background-color: rgb(194, 254, 223);
+  color: #030303;
+}
+
+
+.EshopPdroduct{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.Product_img_tab>img{
+
+  width: 200px;
+  min-height: 210px;
+  background-color: #ff0000;
+
+}
+
+.Product_img_tab{
+  min-height: 250px;
+}
+
+.cartProduct{
+  min-height: 210px;
+}
+
+
+/******************** Spinner E Commerce**********************/
+
+body, html {
+	margin: 0;
+	background: white;
+}
+
+#wrapper {
+	filter: contrast(40);
+	background: white;
+	position:fixed;
+	width:100px;
+	height:100px;
+	z-index:9;
+	overflow:hidden;
+	top:50%;
+	left:50%;
+	margin: -50px 0 0 -50px;
+
+	animation-duration: 8s;
+	animation-fill-mode: both;
+	animation-name: rotate-wrapper;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#corpus {
+	background: #FF00FF;
+	filter: blur(10px);
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:80px;
+	height:80px;
+	border-radius:0;
+	border-radius:50%;
+}
+
+#spinner {	
+	border-radius: 50%;
+	width: 20px;
+	left: 40px;
+	bottom: 50px;
+	height: 20px;
+	position: absolute;
+	filter: blur(5px);
+
+	animation-duration: 6s;
+	animation-fill-mode: both;
+	animation-name: rotate-spinner;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#spinner:after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	background: white;
+	filter: blur(5px);
+}
+
+#text {
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	margin: 60px 0 0 -50px;
+	font-family: 'Comfortaa', cursive, sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	z-index: 10;
+}
+
+@keyframes rotate-wrapper {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-spinner{
+	0% { transform: rotate(0deg) scale(2,1.5) translate(0px,25px); }
+	25% { transform: rotate(270deg) scale(1.5) translate(0px,20px); }
+	50% { transform: rotate(540deg) scale(2) translate(5px,15px); }
+	75% { transform: rotate(810deg) scale(1,3) translate(0px,15px); }
+	100% { transform: rotate(1080deg) scale(2,1.5) translate(0px,25px); }
+}
+
+
+/********************  End **********************/
+
+/********************Page Not Found *************/
+
+
+.mainconPNF{
+	width: 100%;
+	height: 89vh;
+  }
+  .imgpagenotfound{
+	background-position: center;
+	width: 100%;
+	height: 86.5vh;
+	object-fit:contain;
+  
+  }
+  .bodyPNF{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  
+  }
+  
+  .pnfbutton{
+	padding: 15px 32px;
+	background-color: #ea4444;
+	text-align: center;  
+	position: relative;
+	position: fixed;
+	top: 88%;
+	color: rgb(255, 255, 255);
+	border-radius: 50px;
+  }
+  
+  .pnfbutton:hover{
+	padding: 18px 38px;
+	top: 86%;
+	background-color: #f72121;
+  }
+  
+
+/********************  End **********************/
